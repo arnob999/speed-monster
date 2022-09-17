@@ -147,11 +147,15 @@ button {
 }
 
 #histories {
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+  /* flex-wrap: wrap; */
+  justify-content: center;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
 }
 
 .card {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -184,7 +188,11 @@ button {
     width: 100%;
   }
 
-  /* .card {
+  #histories {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .card {
     flex-direction: column;
-  } */
+  }
 }
